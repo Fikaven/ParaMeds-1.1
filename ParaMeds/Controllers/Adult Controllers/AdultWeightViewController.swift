@@ -11,7 +11,7 @@ import RealmSwift
 
 class AdultWeightViewController: UITableViewController {
     
-    
+
     @IBOutlet var weightTableView: UITableView!
     
     

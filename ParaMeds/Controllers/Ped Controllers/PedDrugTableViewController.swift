@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class PedDrugTableViewController: UITableViewController {
-    
+
     
     @IBOutlet var pedTblView: UITableView!
     

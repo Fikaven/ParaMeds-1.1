@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class AdultDoseViewController: UITableViewController {
-    
+
     
     @IBOutlet var adultViewLbl: UITableView!
     

@@ -14,4 +14,3 @@ class Weight1: Object {
     @objc dynamic var done2: Bool = false
     var parentCategory = LinkingObjects(fromType: Item1.self, property: "weight1")
 }
-

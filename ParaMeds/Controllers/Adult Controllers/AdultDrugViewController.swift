@@ -13,7 +13,7 @@ class AdultDrugViewController: UITableViewController  {
     
     
     @IBOutlet var drugTableView: UITableView!
-    
+
     let realm = try! Realm()
     var categories: Results<Category>?
     

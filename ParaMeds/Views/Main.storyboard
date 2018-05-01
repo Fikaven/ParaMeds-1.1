@@ -13,7 +13,7 @@
         <!--Adult-->
         <scene sceneID="elu-yA-oeR">
             <objects>
-                <tableViewController id="cd6-5O-qq0" customClass="AdultDrugViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cd6-5O-qq0" customClass="AdultDrugViewController" customModule="ParaMeds" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tXs-oe-RYz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
         <!--Adult Weight View Controller-->
         <scene sceneID="OVP-Ec-rOh">
             <objects>
-                <tableViewController id="ltA-kW-DRw" customClass="AdultWeightViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ltA-kW-DRw" customClass="AdultWeightViewController" customModule="ParaMeds" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hRP-98-Nqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
         <!--Adult Dose View Controller-->
         <scene sceneID="iEp-jK-oyq">
             <objects>
-                <tableViewController id="ND1-iR-9VK" customClass="AdultDoseViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ND1-iR-9VK" customClass="AdultDoseViewController" customModule="ParaMeds" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w6Q-N4-8d1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <!--Ped Dose Table View Controller-->
         <scene sceneID="YV2-3a-Lw8">
             <objects>
-                <tableViewController id="PI4-hR-bHS" customClass="PedDoseTableViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="PI4-hR-bHS" customClass="PedDoseTableViewController" customModule="ParaMeds" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9sa-vy-7i6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +171,7 @@
         <!--ParaMeds v1-->
         <scene sceneID="eg8-z5-2k4">
             <objects>
-                <viewController id="98P-5v-OVT" customClass="ViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="98P-5v-OVT" customClass="ViewController" customModule="ParaMeds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tzn-eI-T7F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,7 +250,7 @@
         <!--Pediatric-->
         <scene sceneID="kv1-P3-NER">
             <objects>
-                <tableViewController id="Xbi-gZ-9mB" customClass="PedDrugTableViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Xbi-gZ-9mB" customClass="PedDrugTableViewController" customModule="ParaMeds" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="jtY-Xd-Ja6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,7 +292,7 @@
         <!--Ped Weight View Controller-->
         <scene sceneID="wjc-uS-oT4">
             <objects>
-                <tableViewController id="Yik-jC-7AD" customClass="PedWeightViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Yik-jC-7AD" customClass="PedWeightViewController" customModule="ParaMeds" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ceT-qf-htE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

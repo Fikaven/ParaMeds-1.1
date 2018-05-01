@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class PedWeightViewController: UITableViewController {
-    
+
     
     @IBOutlet var pedWeightView: UITableView!
     
