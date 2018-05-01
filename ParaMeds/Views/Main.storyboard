@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uaZ-gD-t7h">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adult-->
+        <scene sceneID="elu-yA-oeR">
+            <objects>
+                <tableViewController id="cd6-5O-qq0" customClass="AdultDrugViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tXs-oe-RYz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="yf8-Rf-7Se" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yf8-Rf-7Se" id="tAs-em-NFM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cd6-5O-qq0" id="Xoj-4h-q6b"/>
+                            <outlet property="delegate" destination="cd6-5O-qq0" id="0h8-a1-aSo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Adult" id="5aH-jk-Z2v">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="b5L-0n-zfd">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addAdultDrug:" destination="cd6-5O-qq0" id="gHc-Sy-RxU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="drugTableView" destination="tXs-oe-RYz" id="CCE-Ja-gZM"/>
+                        <segue destination="ltA-kW-DRw" kind="show" identifier="goToAdultWeight" id="M2j-Cz-Bas"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6U-py-JeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3653.5999999999999" y="178.56071964017991"/>
+        </scene>
+        <!--Adult Weight View Controller-->
+        <scene sceneID="OVP-Ec-rOh">
+            <objects>
+                <tableViewController id="ltA-kW-DRw" customClass="AdultWeightViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hRP-98-Nqe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="C9c-kB-OdA" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C9c-kB-OdA" id="nCR-aU-sQI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ltA-kW-DRw" id="9ra-sp-vLa"/>
+                            <outlet property="delegate" destination="ltA-kW-DRw" id="dGo-wz-5We"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xqb-ju-Re3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sw8-Ty-L3H">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addAdultWeight:" destination="ltA-kW-DRw" id="xXK-hK-PoT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="weightTableView" destination="hRP-98-Nqe" id="Iq3-3V-dlt"/>
+                        <segue destination="ND1-iR-9VK" kind="show" identifier="goToAdultDose" id="wR5-LT-RVM"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vc9-gV-3jy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4345" y="179"/>
+        </scene>
+        <!--Adult Dose View Controller-->
+        <scene sceneID="iEp-jK-oyq">
+            <objects>
+                <tableViewController id="ND1-iR-9VK" customClass="AdultDoseViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="w6Q-N4-8d1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="56R-zs-sb2" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="56R-zs-sb2" id="Er6-LK-fNM" customClass="UITableViewCellContentView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ND1-iR-9VK" id="tZP-qZ-e8v"/>
+                            <outlet property="delegate" destination="ND1-iR-9VK" id="ekF-5s-jHH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="AIW-eG-ahm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="hAa-av-EzR">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addAdultDose:" destination="ND1-iR-9VK" id="QZ1-Zy-5Yv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="adultViewLbl" destination="w6Q-N4-8d1" id="WHK-ov-s3d"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mun-SF-HtR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5045.6000000000004" y="178.56071964017991"/>
+        </scene>
+        <!--Ped Dose Table View Controller-->
+        <scene sceneID="YV2-3a-Lw8">
+            <objects>
+                <tableViewController id="PI4-hR-bHS" customClass="PedDoseTableViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9sa-vy-7i6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="zg4-Nv-Msc" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zg4-Nv-Msc" id="xaW-5C-4VI">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PI4-hR-bHS" id="wh4-bk-V4L"/>
+                            <outlet property="delegate" destination="PI4-hR-bHS" id="K02-pE-ehs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ZPY-Ob-m7L">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JwH-2Q-z5M">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addNewDose:" destination="PI4-hR-bHS" id="5yr-rs-eyg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pedLrgLbl" destination="9sa-vy-7i6" id="RdF-nv-z4D"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mV9-Dl-wqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5045.6000000000004" y="903.59820089955031"/>
+        </scene>
+        <!--ParaMeds v1-->
+        <scene sceneID="eg8-z5-2k4">
+            <objects>
+                <viewController id="98P-5v-OVT" customClass="ViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tzn-eI-T7F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsD-Nm-Yr2" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="301.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPY-zq-62a">
+                                        <rect key="frame" x="12" y="12" width="351" height="283.5"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="72"/>
+                                        <state key="normal" title="Adult">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="adultButton:" destination="98P-5v-OVT" eventType="touchUpInside" id="G6N-ez-RUS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jPY-zq-62a" secondAttribute="bottom" constant="6" id="4FK-bm-5Y5"/>
+                                    <constraint firstAttribute="trailing" secondItem="jPY-zq-62a" secondAttribute="trailing" constant="12" id="TsO-RQ-D6q"/>
+                                    <constraint firstItem="jPY-zq-62a" firstAttribute="leading" secondItem="DsD-Nm-Yr2" secondAttribute="leading" constant="12" id="X3P-Wx-WLY"/>
+                                    <constraint firstItem="jPY-zq-62a" firstAttribute="top" secondItem="DsD-Nm-Yr2" secondAttribute="top" constant="12" id="wF2-4v-xeD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFZ-Az-b4r" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="365.5" width="375" height="301.5"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3Q-TM-pda">
+                                <rect key="frame" x="12" y="371.5" width="351" height="283.5"/>
+                                <color key="backgroundColor" red="0.0039215686269999999" green="0.098039215690000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="72"/>
+                                <state key="normal" title="Pediatric">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pediatricButton:" destination="98P-5v-OVT" eventType="touchUpInside" id="Lah-hJ-ypL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DsD-Nm-Yr2" firstAttribute="trailing" secondItem="Ofm-UI-a39" secondAttribute="trailing" id="1i7-Bo-5cT"/>
+                            <constraint firstItem="DsD-Nm-Yr2" firstAttribute="top" secondItem="Ofm-UI-a39" secondAttribute="top" id="4Z7-Bp-JMY"/>
+                            <constraint firstItem="sFZ-Az-b4r" firstAttribute="height" secondItem="DsD-Nm-Yr2" secondAttribute="height" id="9E9-5c-si6"/>
+                            <constraint firstItem="sFZ-Az-b4r" firstAttribute="top" secondItem="DsD-Nm-Yr2" secondAttribute="bottom" id="9nV-HJ-7Fd"/>
+                            <constraint firstItem="Ofm-UI-a39" firstAttribute="bottom" secondItem="O3Q-TM-pda" secondAttribute="bottom" constant="12" id="A7x-ad-ZqY"/>
+                            <constraint firstItem="O3Q-TM-pda" firstAttribute="top" secondItem="DsD-Nm-Yr2" secondAttribute="bottom" constant="6" id="Bzb-Vy-PQU"/>
+                            <constraint firstItem="sFZ-Az-b4r" firstAttribute="top" secondItem="DsD-Nm-Yr2" secondAttribute="bottom" id="Ckh-oI-3iZ"/>
+                            <constraint firstItem="O3Q-TM-pda" firstAttribute="leading" secondItem="Ofm-UI-a39" secondAttribute="leading" constant="12" id="Txz-kM-n7m"/>
+                            <constraint firstItem="sFZ-Az-b4r" firstAttribute="trailing" secondItem="Ofm-UI-a39" secondAttribute="trailing" id="Uw2-I7-plj"/>
+                            <constraint firstItem="DsD-Nm-Yr2" firstAttribute="leading" secondItem="Ofm-UI-a39" secondAttribute="leading" id="XQO-TD-5gY"/>
+                            <constraint firstItem="sFZ-Az-b4r" firstAttribute="leading" secondItem="Ofm-UI-a39" secondAttribute="leading" id="cMq-Ia-EIy"/>
+                            <constraint firstItem="sFZ-Az-b4r" firstAttribute="bottom" secondItem="Ofm-UI-a39" secondAttribute="bottom" id="qpb-2b-nL5"/>
+                            <constraint firstItem="Ofm-UI-a39" firstAttribute="trailing" secondItem="O3Q-TM-pda" secondAttribute="trailing" constant="12" id="s0q-ue-FAO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ofm-UI-a39"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ParaMeds v1" id="aP3-Xj-IEg">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Fww-Pd-erq"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="adultmain" destination="jPY-zq-62a" id="9bX-31-zjl"/>
+                        <outlet property="pedMain" destination="O3Q-TM-pda" id="yAP-zS-Ym1"/>
+                        <segue destination="cd6-5O-qq0" kind="show" identifier="goToAdultDrugs" id="Ksx-eA-TDs"/>
+                        <segue destination="Xbi-gZ-9mB" kind="show" identifier="goToPedDrugs" id="5c6-My-yLd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yX2-DN-kMj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2916" y="492.50374812593708"/>
+        </scene>
+        <!--Pediatric-->
+        <scene sceneID="kv1-P3-NER">
+            <objects>
+                <tableViewController id="Xbi-gZ-9mB" customClass="PedDrugTableViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="jtY-Xd-Ja6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="GQL-mh-5sc" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQL-mh-5sc" id="bJt-VY-zfH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xbi-gZ-9mB" id="DVz-7S-k2C"/>
+                            <outlet property="delegate" destination="Xbi-gZ-9mB" id="fS7-T9-jjH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Pediatric" id="yU3-kq-I7u">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uHa-hE-bXM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addNewDrug:" destination="Xbi-gZ-9mB" id="Ima-2X-6jw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pedTblView" destination="jtY-Xd-Ja6" id="YbM-5u-Mup"/>
+                        <segue destination="Yik-jC-7AD" kind="show" identifier="goToPedWeight" id="nR2-Sc-O6E"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="59A-cl-4nL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3655" y="904"/>
+        </scene>
+        <!--Ped Weight View Controller-->
+        <scene sceneID="wjc-uS-oT4">
+            <objects>
+                <tableViewController id="Yik-jC-7AD" customClass="PedWeightViewController" customModule="ParaMeds_v1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ceT-qf-htE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="yaY-k8-dgE" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yaY-k8-dgE" id="lqK-8i-lgJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Yik-jC-7AD" id="QOW-z9-vfE"/>
+                            <outlet property="delegate" destination="Yik-jC-7AD" id="kHA-MM-7Rq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gVu-Ih-j9Z">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="aKf-La-1Zp">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addNewWeight:" destination="Yik-jC-7AD" id="q9Y-BF-K5V"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pedWeightView" destination="ceT-qf-htE" id="Hsj-FR-WDY"/>
+                        <segue destination="PI4-hR-bHS" kind="show" identifier="goToPedDose" id="qJw-Ak-mNj"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwm-dB-fg6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4345" y="904"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ex2-FM-lfn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uaZ-gD-t7h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rX3-Fg-iEc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.0039215686269999999" green="0.098039215690000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="98P-5v-OVT" kind="relationship" relationship="rootViewController" id="ZZ0-bt-y96"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCo-A5-FR5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="493"/>
+        </scene>
+    </scenes>
+</document>

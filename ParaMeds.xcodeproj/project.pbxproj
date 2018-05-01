@@ -7,21 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		585D61F8498C22A790E17389 /* Pods_ParaMeds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3028A4DE421EFEC83628DB1F /* Pods_ParaMeds.framework */; };
 		AD1CB9202098020400C5175E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB91F2098020400C5175E /* AppDelegate.swift */; };
 		AD1CB9222098020400C5175E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9212098020400C5175E /* ViewController.swift */; };
-		AD1CB9252098020400C5175E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB9232098020400C5175E /* Main.storyboard */; };
 		AD1CB9272098020400C5175E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB9262098020400C5175E /* Assets.xcassets */; };
 		AD1CB92A2098020400C5175E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB9282098020400C5175E /* LaunchScreen.storyboard */; };
+		AD1CB938209803AE00C5175E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB937209803AE00C5175E /* Main.storyboard */; };
+		AD1CB93A209803C900C5175E /* AdultDrugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB939209803C900C5175E /* AdultDrugViewController.swift */; };
+		AD1CB93D2098042900C5175E /* AdultWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB93C2098042900C5175E /* AdultWeightViewController.swift */; };
+		AD1CB93F2098043100C5175E /* AdultDoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB93E2098043100C5175E /* AdultDoseViewController.swift */; };
+		AD1CB9412098047600C5175E /* PedDrugTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9402098047600C5175E /* PedDrugTableViewController.swift */; };
+		AD1CB944209804AB00C5175E /* PedWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB943209804AB00C5175E /* PedWeightViewController.swift */; };
+		AD1CB946209804B500C5175E /* PedDoseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB945209804B500C5175E /* PedDoseTableViewController.swift */; };
+		AD1CB9482098051600C5175E /* Category1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9472098051600C5175E /* Category1.swift */; };
+		AD1CB94D2098054E00C5175E /* Item1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB94C2098054E00C5175E /* Item1.swift */; };
+		AD1CB94F2098055600C5175E /* Weight1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB94E2098055600C5175E /* Weight1.swift */; };
+		AD1CB9512098055E00C5175E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9502098055E00C5175E /* Category.swift */; };
+		AD1CB9532098056700C5175E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9522098056700C5175E /* Item.swift */; };
+		AD1CB9552098056F00C5175E /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9542098056F00C5175E /* Weight.swift */; };
+		AD1CB9582098064400C5175E /* AdultDoseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB9562098064400C5175E /* AdultDoseCell.xib */; };
+		AD1CB9592098064400C5175E /* AdultDoseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9572098064400C5175E /* AdultDoseCell.swift */; };
+		AD1CB962209806AC00C5175E /* AdultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB960209806AC00C5175E /* AdultViewCell.swift */; };
+		AD1CB963209806AC00C5175E /* AdultViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB961209806AC00C5175E /* AdultViewCell.xib */; };
+		AD1CB96C209806DB00C5175E /* PedDoseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB968209806DB00C5175E /* PedDoseCell.xib */; };
+		AD1CB96D209806DB00C5175E /* PedDoseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB969209806DB00C5175E /* PedDoseCell.swift */; };
+		AD1CB96E209806DB00C5175E /* PedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB96A209806DB00C5175E /* PedViewCell.swift */; };
+		AD1CB96F209806DB00C5175E /* PedViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB96B209806DB00C5175E /* PedViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D2F5E94FDDAFFB37C9DF9F6 /* Pods-ParaMeds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParaMeds.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParaMeds/Pods-ParaMeds.release.xcconfig"; sourceTree = "<group>"; };
+		3028A4DE421EFEC83628DB1F /* Pods_ParaMeds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParaMeds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A085763F5CDEF6147FF4B3D /* Pods-ParaMeds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParaMeds.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParaMeds/Pods-ParaMeds.debug.xcconfig"; sourceTree = "<group>"; };
 		AD1CB91C2098020400C5175E /* ParaMeds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParaMeds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1CB91F2098020400C5175E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD1CB9212098020400C5175E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD1CB9242098020400C5175E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD1CB9262098020400C5175E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD1CB9292098020400C5175E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD1CB92B2098020400C5175E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD1CB937209803AE00C5175E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AD1CB939209803C900C5175E /* AdultDrugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultDrugViewController.swift; sourceTree = "<group>"; };
+		AD1CB93C2098042900C5175E /* AdultWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultWeightViewController.swift; sourceTree = "<group>"; };
+		AD1CB93E2098043100C5175E /* AdultDoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultDoseViewController.swift; sourceTree = "<group>"; };
+		AD1CB9402098047600C5175E /* PedDrugTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedDrugTableViewController.swift; sourceTree = "<group>"; };
+		AD1CB943209804AB00C5175E /* PedWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedWeightViewController.swift; sourceTree = "<group>"; };
+		AD1CB945209804B500C5175E /* PedDoseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedDoseTableViewController.swift; sourceTree = "<group>"; };
+		AD1CB9472098051600C5175E /* Category1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category1.swift; sourceTree = "<group>"; };
+		AD1CB94C2098054E00C5175E /* Item1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item1.swift; sourceTree = "<group>"; };
+		AD1CB94E2098055600C5175E /* Weight1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight1.swift; sourceTree = "<group>"; };
+		AD1CB9502098055E00C5175E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		AD1CB9522098056700C5175E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AD1CB9542098056F00C5175E /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		AD1CB9562098064400C5175E /* AdultDoseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdultDoseCell.xib; sourceTree = "<group>"; };
+		AD1CB9572098064400C5175E /* AdultDoseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdultDoseCell.swift; sourceTree = "<group>"; };
+		AD1CB960209806AC00C5175E /* AdultViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdultViewCell.swift; sourceTree = "<group>"; };
+		AD1CB961209806AC00C5175E /* AdultViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdultViewCell.xib; sourceTree = "<group>"; };
+		AD1CB968209806DB00C5175E /* PedDoseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PedDoseCell.xib; sourceTree = "<group>"; };
+		AD1CB969209806DB00C5175E /* PedDoseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedDoseCell.swift; sourceTree = "<group>"; };
+		AD1CB96A209806DB00C5175E /* PedViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedViewCell.swift; sourceTree = "<group>"; };
+		AD1CB96B209806DB00C5175E /* PedViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PedViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585D61F8498C22A790E17389 /* Pods_ParaMeds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FAC6C86E0D6BFC7745342B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3028A4DE421EFEC83628DB1F /* Pods_ParaMeds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD1CB9132098020400C5175E = {
 			isa = PBXGroup;
 			children = (
 				AD1CB91E2098020400C5175E /* ParaMeds */,
 				AD1CB91D2098020400C5175E /* Products */,
+				EC885D0C8DEFA18D4E206565 /* Pods */,
+				1FAC6C86E0D6BFC7745342B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +110,122 @@
 			isa = PBXGroup;
 			children = (
 				AD1CB91F2098020400C5175E /* AppDelegate.swift */,
-				AD1CB9212098020400C5175E /* ViewController.swift */,
-				AD1CB9232098020400C5175E /* Main.storyboard */,
+				AD1CB9322098030100C5175E /* Controllers */,
+				AD1CB9492098051E00C5175E /* Data Model */,
+				AD1CB9312098028300C5175E /* Views */,
 				AD1CB9262098020400C5175E /* Assets.xcassets */,
-				AD1CB9282098020400C5175E /* LaunchScreen.storyboard */,
 				AD1CB92B2098020400C5175E /* Info.plist */,
 			);
 			path = ParaMeds;
+			sourceTree = "<group>";
+		};
+		AD1CB9312098028300C5175E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB937209803AE00C5175E /* Main.storyboard */,
+				AD1CB9282098020400C5175E /* LaunchScreen.storyboard */,
+				AD1CB95A2098064B00C5175E /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD1CB9322098030100C5175E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB9212098020400C5175E /* ViewController.swift */,
+				AD1CB93B209803E600C5175E /* Adult Controllers */,
+				AD1CB9422098048300C5175E /* Ped Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD1CB93B209803E600C5175E /* Adult Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB939209803C900C5175E /* AdultDrugViewController.swift */,
+				AD1CB93C2098042900C5175E /* AdultWeightViewController.swift */,
+				AD1CB93E2098043100C5175E /* AdultDoseViewController.swift */,
+			);
+			path = "Adult Controllers";
+			sourceTree = "<group>";
+		};
+		AD1CB9422098048300C5175E /* Ped Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB9402098047600C5175E /* PedDrugTableViewController.swift */,
+				AD1CB943209804AB00C5175E /* PedWeightViewController.swift */,
+				AD1CB945209804B500C5175E /* PedDoseTableViewController.swift */,
+			);
+			path = "Ped Controllers";
+			sourceTree = "<group>";
+		};
+		AD1CB9492098051E00C5175E /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB94A2098052A00C5175E /* Adult Data */,
+				AD1CB94B2098053600C5175E /* Ped Data */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		AD1CB94A2098052A00C5175E /* Adult Data */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB9502098055E00C5175E /* Category.swift */,
+				AD1CB9522098056700C5175E /* Item.swift */,
+				AD1CB9542098056F00C5175E /* Weight.swift */,
+			);
+			path = "Adult Data";
+			sourceTree = "<group>";
+		};
+		AD1CB94B2098053600C5175E /* Ped Data */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB9472098051600C5175E /* Category1.swift */,
+				AD1CB94C2098054E00C5175E /* Item1.swift */,
+				AD1CB94E2098055600C5175E /* Weight1.swift */,
+			);
+			path = "Ped Data";
+			sourceTree = "<group>";
+		};
+		AD1CB95A2098064B00C5175E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB970209806E700C5175E /* Ped Cells */,
+				AD1CB95B2098065F00C5175E /* Adult Cells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AD1CB95B2098065F00C5175E /* Adult Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB9572098064400C5175E /* AdultDoseCell.swift */,
+				AD1CB9562098064400C5175E /* AdultDoseCell.xib */,
+				AD1CB960209806AC00C5175E /* AdultViewCell.swift */,
+				AD1CB961209806AC00C5175E /* AdultViewCell.xib */,
+			);
+			path = "Adult Cells";
+			sourceTree = "<group>";
+		};
+		AD1CB970209806E700C5175E /* Ped Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AD1CB969209806DB00C5175E /* PedDoseCell.swift */,
+				AD1CB968209806DB00C5175E /* PedDoseCell.xib */,
+				AD1CB96A209806DB00C5175E /* PedViewCell.swift */,
+				AD1CB96B209806DB00C5175E /* PedViewCell.xib */,
+			);
+			path = "Ped Cells";
+			sourceTree = "<group>";
+		};
+		EC885D0C8DEFA18D4E206565 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A085763F5CDEF6147FF4B3D /* Pods-ParaMeds.debug.xcconfig */,
+				2D2F5E94FDDAFFB37C9DF9F6 /* Pods-ParaMeds.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD1CB92E2098020400C5175E /* Build configuration list for PBXNativeTarget "ParaMeds" */;
 			buildPhases = (
+				BE0F0C10561EE734A40FDD78 /* [CP] Check Pods Manifest.lock */,
 				AD1CB9182098020400C5175E /* Sources */,
 				AD1CB9192098020400C5175E /* Frameworks */,
 				AD1CB91A2098020400C5175E /* Resources */,
+				0FB190D3AB35F5A54B91BA17 /* [CP] Embed Pods Frameworks */,
+				A900D73B90EEB52487A36B6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,35 +289,103 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1CB96F209806DB00C5175E /* PedViewCell.xib in Resources */,
+				AD1CB963209806AC00C5175E /* AdultViewCell.xib in Resources */,
+				AD1CB938209803AE00C5175E /* Main.storyboard in Resources */,
 				AD1CB92A2098020400C5175E /* LaunchScreen.storyboard in Resources */,
 				AD1CB9272098020400C5175E /* Assets.xcassets in Resources */,
-				AD1CB9252098020400C5175E /* Main.storyboard in Resources */,
+				AD1CB96C209806DB00C5175E /* PedDoseCell.xib in Resources */,
+				AD1CB9582098064400C5175E /* AdultDoseCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FB190D3AB35F5A54B91BA17 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ParaMeds/Pods-ParaMeds-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParaMeds/Pods-ParaMeds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A900D73B90EEB52487A36B6E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParaMeds/Pods-ParaMeds-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0F0C10561EE734A40FDD78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ParaMeds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD1CB9182098020400C5175E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1CB96E209806DB00C5175E /* PedViewCell.swift in Sources */,
+				AD1CB9592098064400C5175E /* AdultDoseCell.swift in Sources */,
+				AD1CB93D2098042900C5175E /* AdultWeightViewController.swift in Sources */,
+				AD1CB96D209806DB00C5175E /* PedDoseCell.swift in Sources */,
+				AD1CB9512098055E00C5175E /* Category.swift in Sources */,
+				AD1CB962209806AC00C5175E /* AdultViewCell.swift in Sources */,
+				AD1CB94F2098055600C5175E /* Weight1.swift in Sources */,
+				AD1CB9412098047600C5175E /* PedDrugTableViewController.swift in Sources */,
+				AD1CB946209804B500C5175E /* PedDoseTableViewController.swift in Sources */,
+				AD1CB94D2098054E00C5175E /* Item1.swift in Sources */,
+				AD1CB93F2098043100C5175E /* AdultDoseViewController.swift in Sources */,
 				AD1CB9222098020400C5175E /* ViewController.swift in Sources */,
+				AD1CB9532098056700C5175E /* Item.swift in Sources */,
+				AD1CB93A209803C900C5175E /* AdultDrugViewController.swift in Sources */,
+				AD1CB9552098056F00C5175E /* Weight.swift in Sources */,
 				AD1CB9202098020400C5175E /* AppDelegate.swift in Sources */,
+				AD1CB9482098051600C5175E /* Category1.swift in Sources */,
+				AD1CB944209804AB00C5175E /* PedWeightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AD1CB9232098020400C5175E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD1CB9242098020400C5175E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD1CB9282098020400C5175E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -278,6 +513,7 @@
 		};
 		AD1CB92F2098020400C5175E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A085763F5CDEF6147FF4B3D /* Pods-ParaMeds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,7 +523,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Archlex.ParaMeds;
+				PRODUCT_BUNDLE_IDENTIFIER = Fikaven.ParaMeds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +532,7 @@
 		};
 		AD1CB9302098020400C5175E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2F5E94FDDAFFB37C9DF9F6 /* Pods-ParaMeds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,7 +542,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Archlex.ParaMeds;
+				PRODUCT_BUNDLE_IDENTIFIER = Fikaven.ParaMeds;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
