@@ -42,7 +42,7 @@ class AdultDrugViewController: UITableViewController  {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "AdultDoseCell", for: indexPath) as! AdultDoseCell
         
-        cell.drugLbl.text = categories?[indexPath.row].name
+        cell.drugLbl.text = categories?[indexPath.row].adltDrug1
         
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.5
@@ -100,7 +100,7 @@ class AdultDrugViewController: UITableViewController  {
     
     func loadCategories() {
         
-        categories  = realm.objects(Category.self).sorted(byKeyPath: "name", ascending: true)
+        categories  = realm.objects(Category.self).sorted(byKeyPath: "adltDrug1", ascending: true)
         tableView.reloadData()
     }
     
@@ -130,7 +130,7 @@ class AdultDrugViewController: UITableViewController  {
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             
             let newCategory = Category()
-            newCategory.name = textField.text!
+            newCategory.adltDrug1 = textField.text!
             self.save(category: newCategory)
         }
         

@@ -1,5 +1,5 @@
 //
-//  File2.swift
+//  File1.swift
 //  ParaMeds
 //
 //  Created by Stephen Smith on 4/30/18.
@@ -10,7 +10,8 @@ import Foundation
 import RealmSwift
 
 class Weight: Object {
-    @objc dynamic var title3: String = ""
-    @objc dynamic var done3: Bool = false
-    var parentCategory = LinkingObjects(fromType: Item.self, property: "weight")
+    @objc dynamic var aweight: String = ""
+    @objc dynamic var done: Bool = false
+    let wght1 = List<Dose>()
+    var parentCategory = LinkingObjects(fromType: Category.self, property: "items")
 }

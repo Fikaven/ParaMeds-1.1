@@ -15,7 +15,7 @@ class AdultWeightViewController: UITableViewController {
     @IBOutlet var weightTableView: UITableView!
     
     
-    var items: Results<Item>?
+    var items: Results<Weight>?
     let realm = try! Realm()
     var selectedCategory : Category?{
         didSet {
@@ -34,7 +34,7 @@ class AdultWeightViewController: UITableViewController {
         
     }
     override func viewWillAppear(_ animated: Bool) {
-        title = selectedCategory?.name
+        title = selectedCategory?.adltDrug1
     }
     
     //MARK: - TableView Datasource Methods
@@ -47,7 +47,7 @@ class AdultWeightViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "AdultDoseCell", for: indexPath) as! AdultDoseCell
         
-        cell.drugLbl.text = items?[indexPath.row].title
+        cell.drugLbl.text = items?[indexPath.row].aweight
         
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.5
@@ -118,8 +118,8 @@ class AdultWeightViewController: UITableViewController {
             if let currentCategory = self.selectedCategory {
                 do {
                     try self.realm.write {
-                        let newItem = Item()
-                        newItem.title = textField.text!
+                        let newItem = Weight()
+                        newItem.aweight = textField.text!
                         currentCategory.items.append(newItem)
                     }
                 } catch {
@@ -147,7 +147,7 @@ class AdultWeightViewController: UITableViewController {
     //MARK - Model Manupulation Methods
     
     func loadItems() {
-        items = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
+        items = selectedCategory?.items.sorted(byKeyPath: "aweight", ascending: true)
         tableView.reloadData()
     }
     

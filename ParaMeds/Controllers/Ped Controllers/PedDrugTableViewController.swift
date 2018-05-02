@@ -36,7 +36,7 @@ class PedDrugTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PedDoseCell", for: indexPath) as! PedDoseCell
         
-        cell.pedDrugLbl.text = categories?[indexPath.row].name1
+        cell.pedDrugLbl.text = categories?[indexPath.row].pedDrug1
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.5
         cell.layer.shadowOffset = CGSize.zero
@@ -93,7 +93,7 @@ class PedDrugTableViewController: UITableViewController {
     
     func loadCategories() {
         
-        categories  = realm.objects(Category1.self).sorted(byKeyPath: "name1", ascending: true)
+        categories  = realm.objects(Category1.self).sorted(byKeyPath: "pedDrug1", ascending: true)
         tableView.reloadData()
     }
     
@@ -121,7 +121,7 @@ class PedDrugTableViewController: UITableViewController {
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             
             let newCategory = Category1()
-            newCategory.name1 = textField.text!
+            newCategory.pedDrug1 = textField.text!
             self.save(category: newCategory)
         }
         

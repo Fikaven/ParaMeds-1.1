@@ -20,11 +20,11 @@
 		AD1CB944209804AB00C5175E /* PedWeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB943209804AB00C5175E /* PedWeightViewController.swift */; };
 		AD1CB946209804B500C5175E /* PedDoseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB945209804B500C5175E /* PedDoseTableViewController.swift */; };
 		AD1CB9482098051600C5175E /* Category1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9472098051600C5175E /* Category1.swift */; };
-		AD1CB94D2098054E00C5175E /* Item1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB94C2098054E00C5175E /* Item1.swift */; };
-		AD1CB94F2098055600C5175E /* Weight1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB94E2098055600C5175E /* Weight1.swift */; };
+		AD1CB94D2098054E00C5175E /* Weight1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB94C2098054E00C5175E /* Weight1.swift */; };
+		AD1CB94F2098055600C5175E /* Dose1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB94E2098055600C5175E /* Dose1.swift */; };
 		AD1CB9512098055E00C5175E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9502098055E00C5175E /* Category.swift */; };
-		AD1CB9532098056700C5175E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9522098056700C5175E /* Item.swift */; };
-		AD1CB9552098056F00C5175E /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9542098056F00C5175E /* Weight.swift */; };
+		AD1CB9532098056700C5175E /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9522098056700C5175E /* Weight.swift */; };
+		AD1CB9552098056F00C5175E /* Dose.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9542098056F00C5175E /* Dose.swift */; };
 		AD1CB9582098064400C5175E /* AdultDoseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD1CB9562098064400C5175E /* AdultDoseCell.xib */; };
 		AD1CB9592098064400C5175E /* AdultDoseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB9572098064400C5175E /* AdultDoseCell.swift */; };
 		AD1CB962209806AC00C5175E /* AdultViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1CB960209806AC00C5175E /* AdultViewCell.swift */; };
@@ -53,11 +53,11 @@
 		AD1CB943209804AB00C5175E /* PedWeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedWeightViewController.swift; sourceTree = "<group>"; };
 		AD1CB945209804B500C5175E /* PedDoseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedDoseTableViewController.swift; sourceTree = "<group>"; };
 		AD1CB9472098051600C5175E /* Category1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category1.swift; sourceTree = "<group>"; };
-		AD1CB94C2098054E00C5175E /* Item1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item1.swift; sourceTree = "<group>"; };
-		AD1CB94E2098055600C5175E /* Weight1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight1.swift; sourceTree = "<group>"; };
+		AD1CB94C2098054E00C5175E /* Weight1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight1.swift; sourceTree = "<group>"; };
+		AD1CB94E2098055600C5175E /* Dose1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dose1.swift; sourceTree = "<group>"; };
 		AD1CB9502098055E00C5175E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		AD1CB9522098056700C5175E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		AD1CB9542098056F00C5175E /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		AD1CB9522098056700C5175E /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		AD1CB9542098056F00C5175E /* Dose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dose.swift; sourceTree = "<group>"; };
 		AD1CB9562098064400C5175E /* AdultDoseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdultDoseCell.xib; sourceTree = "<group>"; };
 		AD1CB9572098064400C5175E /* AdultDoseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdultDoseCell.swift; sourceTree = "<group>"; };
 		AD1CB960209806AC00C5175E /* AdultViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdultViewCell.swift; sourceTree = "<group>"; };
@@ -172,8 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				AD1CB9502098055E00C5175E /* Category.swift */,
-				AD1CB9522098056700C5175E /* Item.swift */,
-				AD1CB9542098056F00C5175E /* Weight.swift */,
+				AD1CB9522098056700C5175E /* Weight.swift */,
+				AD1CB9542098056F00C5175E /* Dose.swift */,
 			);
 			path = "Adult Data";
 			sourceTree = "<group>";
@@ -182,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				AD1CB9472098051600C5175E /* Category1.swift */,
-				AD1CB94C2098054E00C5175E /* Item1.swift */,
-				AD1CB94E2098055600C5175E /* Weight1.swift */,
+				AD1CB94C2098054E00C5175E /* Weight1.swift */,
+				AD1CB94E2098055600C5175E /* Dose1.swift */,
 			);
 			path = "Ped Data";
 			sourceTree = "<group>";
@@ -368,15 +368,15 @@
 				AD1CB96D209806DB00C5175E /* PedDoseCell.swift in Sources */,
 				AD1CB9512098055E00C5175E /* Category.swift in Sources */,
 				AD1CB962209806AC00C5175E /* AdultViewCell.swift in Sources */,
-				AD1CB94F2098055600C5175E /* Weight1.swift in Sources */,
+				AD1CB94F2098055600C5175E /* Dose1.swift in Sources */,
 				AD1CB9412098047600C5175E /* PedDrugTableViewController.swift in Sources */,
 				AD1CB946209804B500C5175E /* PedDoseTableViewController.swift in Sources */,
-				AD1CB94D2098054E00C5175E /* Item1.swift in Sources */,
+				AD1CB94D2098054E00C5175E /* Weight1.swift in Sources */,
 				AD1CB93F2098043100C5175E /* AdultDoseViewController.swift in Sources */,
 				AD1CB9222098020400C5175E /* ViewController.swift in Sources */,
-				AD1CB9532098056700C5175E /* Item.swift in Sources */,
+				AD1CB9532098056700C5175E /* Weight.swift in Sources */,
 				AD1CB93A209803C900C5175E /* AdultDrugViewController.swift in Sources */,
-				AD1CB9552098056F00C5175E /* Weight.swift in Sources */,
+				AD1CB9552098056F00C5175E /* Dose.swift in Sources */,
 				AD1CB9202098020400C5175E /* AppDelegate.swift in Sources */,
 				AD1CB9482098051600C5175E /* Category1.swift in Sources */,
 				AD1CB944209804AB00C5175E /* PedWeightViewController.swift in Sources */,

@@ -14,7 +14,7 @@ class PedWeightViewController: UITableViewController {
     
     @IBOutlet var pedWeightView: UITableView!
     
-    var items1: Results<Item1>?
+    var items1: Results<Weight1>?
     let realm = try! Realm()
     var selectedCategory : Category1?{
         didSet {
@@ -32,7 +32,7 @@ class PedWeightViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        title = selectedCategory?.name1
+        title = selectedCategory?.pedDrug1
     }
     
     //MARK: - TableView Datasource Methods
@@ -45,7 +45,7 @@ class PedWeightViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PedDoseCell", for: indexPath) as! PedDoseCell
         
-        cell.pedDrugLbl.text = items1?[indexPath.row].title1
+        cell.pedDrugLbl.text = items1?[indexPath.row].pedWeight1
         
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.5
@@ -112,8 +112,8 @@ class PedWeightViewController: UITableViewController {
             if let currentCategory = self.selectedCategory {
                 do {
                     try self.realm.write {
-                        let newItem = Item1()
-                        newItem.title1 = textField.text!
+                        let newItem = Weight1()
+                        newItem.pedWeight1 = textField.text!
                         currentCategory.items1.append(newItem)
                     }
                 } catch {
@@ -138,7 +138,7 @@ class PedWeightViewController: UITableViewController {
     //MARK - Model Manupulation Methods
     
     func loadItems() {
-        items1 = selectedCategory?.items1.sorted(byKeyPath: "title1", ascending: true)
+        items1 = selectedCategory?.items1.sorted(byKeyPath: "pedWeight1", ascending: true)
         tableView.reloadData()
     }
     
