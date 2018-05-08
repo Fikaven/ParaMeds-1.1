@@ -10,7 +10,9 @@ import Foundation
 import RealmSwift
 
 class Dose1: Object {
-    @objc dynamic var pedDose1: String = ""
+    @objc dynamic var pInjct: String = ""
+    @objc dynamic var pfrstDose: String = ""
+    @objc dynamic var pScndDose: String = ""
     @objc dynamic var done2: Bool = false
     var parentCategory = LinkingObjects(fromType: Weight1.self, property: "weight1")
 }

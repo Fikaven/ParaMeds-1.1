@@ -14,7 +14,7 @@ class PedDoseTableViewController: UITableViewController {
 
     @IBOutlet var pedLrgLbl: UITableView!
     
-    var todoItems1: Results<Dose1>?
+    var pDoseItems: Results<Dose1>?
     let realm = try! Realm()
     
     var selectedCategory1 : Weight1? {
@@ -43,14 +43,16 @@ class PedDoseTableViewController: UITableViewController {
     //MARK: - Tableview Datasource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoItems1?.count ?? 1
+        return pDoseItems?.count ?? 1
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PedViewCell", for: indexPath) as! PedViewCell
         
-        cell.pedDView.text = todoItems1?[indexPath.row].pedDose1
+        cell.pInjctLbl.text = pDoseItems?[indexPath.row].pInjct
+        cell.pInitialDoseLbl.text = pDoseItems?[indexPath.row].pfrstDose
+        cell.pSecondDoseLbl.text = pDoseItems?[indexPath.row].pScndDose
         
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.5
@@ -65,7 +67,7 @@ class PedDoseTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if let item = todoItems1?[indexPath.row] {
+        if let item = pDoseItems?[indexPath.row] {
             do {
                 try realm.write {
                     item.done2 = !item.done2
@@ -95,7 +97,7 @@ class PedDoseTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 256
+        return 332
     }
     
     //MARK: - Add New Items
@@ -104,8 +106,10 @@ class PedDoseTableViewController: UITableViewController {
     @IBAction func addNewDose(_ sender: UIBarButtonItem) {
         
         var textField = UITextField()
+        var textField1 = UITextField()
+        var textField2 = UITextField()
         
-        let alert = UIAlertController(title: "Add a new dose", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add a dose", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             //what will happen once the user clicks the Add Item button on our UIAlert
@@ -114,7 +118,9 @@ class PedDoseTableViewController: UITableViewController {
                 do {
                     try self.realm.write {
                         let newItem = Dose1()
-                        newItem.pedDose1 = textField.text!
+                        newItem.pInjct = textField.text!
+                        newItem.pfrstDose = textField1.text!
+                        newItem.pScndDose = textField2.text!
                         currentCategory.weight1.append(newItem)
                     }
                 } catch {
@@ -126,11 +132,18 @@ class PedDoseTableViewController: UITableViewController {
         }
         
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Create new item"
+            alertTextField.placeholder = "Injection method      "
             textField = alertTextField
             
         }
-        
+        alert.addTextField { (alertTextField1) in
+            alertTextField1.placeholder = "Initian dose"
+            textField1 = alertTextField1
+        }
+        alert.addTextField { (alertTextField2) in
+            alertTextField2.placeholder = "Second/Max dose"
+            textField2 = alertTextField2
+        }
         
         alert.addAction(action)
         
@@ -148,13 +161,13 @@ class PedDoseTableViewController: UITableViewController {
     
     func loadItems1() {
         
-        todoItems1 = selectedCategory1?.weight1.sorted(byKeyPath: "pedDose1", ascending: true)
+        pDoseItems = selectedCategory1?.weight1.sorted(byKeyPath: "pInjct", ascending: true)
         
         tableView.reloadData()
         
     }
     func updateModel(at indexPath: IndexPath) {
-        if let item = todoItems1?[indexPath.row] {
+        if let item = pDoseItems?[indexPath.row] {
             do{
                 try realm.write {
                     realm.delete(item)

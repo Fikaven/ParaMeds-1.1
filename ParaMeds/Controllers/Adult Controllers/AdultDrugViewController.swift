@@ -125,7 +125,7 @@ class AdultDrugViewController: UITableViewController  {
         
         var textField = UITextField()
         
-        let alert = UIAlertController(title: "Add a new drug", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add a drug", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             
@@ -142,7 +142,7 @@ class AdultDrugViewController: UITableViewController  {
         
         alert.addTextField { (field) in
             textField = field
-            textField.placeholder = "Add a new category"
+            textField.placeholder = "Add a drug"
         }
         
         self.present(alert, animated: true, completion: nil)

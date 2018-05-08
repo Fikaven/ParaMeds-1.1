@@ -31,7 +31,6 @@ class AdultDoseViewController: UITableViewController {
         
         super.viewDidLoad()
         
-        tableView.rowHeight = 524
         tableView.separatorStyle = .none
         
         print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
@@ -50,7 +49,9 @@ class AdultDoseViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "AdultViewCell", for: indexPath) as! AdultViewCell
-        cell.adultbLbl.text = doseItems?[indexPath.row].adltDose
+        cell.ainjectionLbl.text = doseItems?[indexPath.row].aInjct
+        cell.aInitialDose.text = doseItems?[indexPath.row].afrstDose
+        cell.aSecondDose.text = doseItems?[indexPath.row].aScndDose
         
         cell.layer.shadowColor = UIColor.black.cgColor
         cell.layer.shadowOpacity = 0.5
@@ -90,7 +91,7 @@ class AdultDoseViewController: UITableViewController {
         }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 256
+        return 332
         }
     
     //MARK: - Add New Items
@@ -99,6 +100,8 @@ class AdultDoseViewController: UITableViewController {
     @IBAction func addAdultDose(_ sender: UIBarButtonItem) {
         
         var textField = UITextField()
+        var textField1 = UITextField()
+         var textField2 = UITextField()
         
         let alert = UIAlertController(title: "Add a new dose", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
@@ -107,7 +110,9 @@ class AdultDoseViewController: UITableViewController {
                 do {
                     try self.realm.write {
                         let newItem = Dose()
-                        newItem.adltDose = textField.text!
+                        newItem.aInjct = textField.text!
+                        newItem.afrstDose = textField1.text!
+                        newItem.aScndDose = textField2.text!
                         currentCategory.wght1.append(newItem)
                         }
                         } catch {
@@ -118,10 +123,18 @@ class AdultDoseViewController: UITableViewController {
             }
         
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Create new item"
+            alertTextField.placeholder = "Injection type"
             textField = alertTextField
             }
-
+        alert.addTextField { (alertTextField1) in
+            alertTextField1.placeholder = "Initial dose"
+            textField1 = alertTextField1
+        }
+        alert.addTextField { (alertTextField2) in
+            alertTextField2.placeholder = "Second/Max dose"
+            textField2 = alertTextField2
+        }
+        
         alert.addAction(action)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -135,7 +148,7 @@ class AdultDoseViewController: UITableViewController {
     
     func loadItems1() {
         
-        doseItems = selectedCategory1?.wght1.sorted(byKeyPath: "adltDose", ascending: true)
+        doseItems = selectedCategory1?.wght1.sorted(byKeyPath: "aInjct", ascending: true)
         tableView.reloadData()
     }
     

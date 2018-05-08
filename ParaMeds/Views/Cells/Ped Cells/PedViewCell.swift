@@ -10,9 +10,11 @@ import UIKit
 
 class PedViewCell: UITableViewCell {
 
+    @IBOutlet weak var pInjctLbl: UILabel!
+    @IBOutlet weak var pInitialDoseLbl: UILabel!
+    @IBOutlet weak var pSecondDoseLbl: UILabel!
     
-    @IBOutlet weak var pedDView: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

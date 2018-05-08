@@ -11,7 +11,9 @@ import UIKit
 class AdultViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var adultbLbl: UILabel!
+    @IBOutlet weak var ainjectionLbl: UILabel!
+    @IBOutlet weak var aInitialDose: UILabel!
+    @IBOutlet weak var aSecondDose: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

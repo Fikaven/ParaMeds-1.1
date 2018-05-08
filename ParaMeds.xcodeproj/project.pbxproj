@@ -191,8 +191,8 @@
 		AD1CB95A2098064B00C5175E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				AD1CB970209806E700C5175E /* Ped Cells */,
 				AD1CB95B2098065F00C5175E /* Adult Cells */,
+				AD1CB970209806E700C5175E /* Ped Cells */,
 			);
 			path = Cells;
 			sourceTree = "<group>";

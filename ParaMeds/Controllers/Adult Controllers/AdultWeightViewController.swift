@@ -111,7 +111,7 @@ class AdultWeightViewController: UITableViewController {
         
         var textField = UITextField()
         
-        let alert = UIAlertController(title: "Add a new weight", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add a weight", message: "", preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
             
@@ -138,7 +138,7 @@ class AdultWeightViewController: UITableViewController {
         
         alert.addTextField { (field) in
             textField = field
-            textField.placeholder = "Add a new weight"
+            textField.placeholder = "Add a weight"
         }
         present(alert, animated: true, completion: nil)
         
